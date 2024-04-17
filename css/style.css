@@ -55,7 +55,7 @@ nav {
     box-sizing: border-box;
     z-index: 2;
     font-family: "Roboto", sans-serif;
-    min-height: 50px;
+    min-height: 35px;
     background-color: var(--gray-color);
 }
 
@@ -235,6 +235,24 @@ h1 {
     border-radius: 24px;
     width: 95%;
 }
+.permanent-links li, .collapsible-links li {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.menu-toggle {
+    display: inline-block; 
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px; 
+    padding: 10px; 
+    color: var(--text-color)
+}
+
+.collapsible-links {
+    display: none;
+}
 
 @media (max-width: 768px){
     .cs-left {
@@ -245,6 +263,9 @@ h1 {
 }
 
 @media (min-width: 768px) {
+    nav{
+        min-height: 40px;
+    }
     ul {
         list-style: none;
         padding-right: 10px;
@@ -374,5 +395,19 @@ h1 {
     .index_projects img {
         align-items: center;
         padding: 10px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .permanent-links,
+    .collapsible-links {
+        display: inline-block;
+    }
+
+    .permanent-links li,
+    .collapsible-links li {
+        display: inline-block;
     }
 } 
