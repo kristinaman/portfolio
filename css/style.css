@@ -42,7 +42,7 @@ html {
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -55,7 +55,7 @@ nav {
     box-sizing: border-box;
     z-index: 2;
     font-family: "Roboto", sans-serif;
-    min-height: 50px;
+    min-height: 30px;
     background-color: var(--pastel-pink);
 }
 
@@ -101,7 +101,6 @@ img.logo {
     margin: 0 auto;
     padding: 0;
     line-height: 1.2;
-    margin-top: 25px;
     font-size: 25px;
 }
 
@@ -281,7 +280,7 @@ h1 {
 
     li a:hover {
         font-weight: bolder;
-        color: var(--pastel-blue);
+        color: pink;
     }
 
     .button {
@@ -306,7 +305,6 @@ h1 {
         margin: 0 auto;
         padding: 0;
         line-height: 1;
-        margin-top: -20px;
     }
 
     .innertext {
