@@ -76,7 +76,7 @@ li a {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 12px;
+    font-size: 20px;
     text-decoration: none;
     padding: 10px;
 }
@@ -255,30 +255,52 @@ img.logo {
     display: none; 
 }
 
-.about-top img {
-    min-width: 408px;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.about-top h1 {
-    margin-top: 20px;
-    margin-bottom: 0;
-    text-align: center;
-    width: 90%;
-}
-
-.intro p {
-    padding: 20px;
+.about-top p {
     font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+.about-top h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    padding:10px;
+    font-weight: 600;
+
+}
+.top-page {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    background: var(--main-bg-color);
+}
+.top {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: var(--main-bg-color);
+    padding-bottom: 10;
+}
+.about-top {
+    text-align: center;
+    padding-top: 10px;
+}
+.about-top img{
+    max-width: 300px;
+}
+.intro {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.intro p{
+    margin-top: 50px;
+    line-height: 1.5;
+    text-align:justify;
 }
 .highlight {
     color: var(--pastel-pink);
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
-
 
 
 @media (max-width: 768px){
@@ -437,11 +459,14 @@ img.logo {
         display: inline-block;
     }
 
-    p {
+    .about-top p {
         font-family: "Roboto", sans-serif;
+        font-size: 20px;
     }
-    h1 {
+    .about-top h1 {
         font-family: "Roboto", sans-serif;
+        font-size: 30px;
+        padding:10px;
         font-weight: 700;
     
     }
@@ -462,16 +487,17 @@ img.logo {
         text-align: center;
         padding-top: 100px;
     }
-    .about-pic {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    .about-top img{
+        max-width: 300px;
     }
     .intro {
         width: 75%;
         margin: 0 auto;
-        margin-bottom: 40px;
+        margin-bottom: 300px;
+    }
+    .intro p{
+        margin-top: 50px;
+        line-height: 1.5;
     }
     .highlight {
         color: var(--pastel-pink);
