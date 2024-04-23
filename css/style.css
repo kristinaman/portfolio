@@ -1,12 +1,11 @@
 /* style.css */
 :root {
-    --beige-color: #eed782;
     --accent-color: #eed9c4;
-    --text-color: #5b5b5b;
+    --text-color: #5e4937;
     --main-bg-color: #F7F2EA;
     --pastel-blue: #568ea6;
     --pastel-pink:#b06673;
-    --brown: #794A21;
+    --brown: #796554;
 }
 
 body {
@@ -73,7 +72,7 @@ li {
 }
 
 li a {
-    color: #000000;
+    color:var(--text-color);
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -191,7 +190,7 @@ img.logo {
     font-size: 14px;
 }
 .small{
-    color: var(--brown);
+    color:#5e4937;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -232,7 +231,7 @@ img.logo {
 .instaclone-box {
     display: flex;
     align-items: center;
-    border: 1px solid var(--beige-color);
+    border: 1px solid var(--main-bg-color);
     border-radius: 24px;
     width: 95%;
 }
@@ -256,23 +255,31 @@ img.logo {
     display: none; 
 }
 
-.about-landing-page{
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    height: 100vh; 
-    background: var(--main-bg-color)
+.about-top img {
+    min-width: 408px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
 }
-.top {
-    margin-bottom: 100px;
-    margin-top: 200px;
-    background-color: var(--pistachio);
-    padding-bottom: 150px;;
-}
-.about-top {
+
+.about-top h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
     text-align: center;
-    padding-top: 100px;
+    width: 90%;
 }
+
+.intro p {
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.highlight {
+    color: var(--pastel-pink);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+
 
 @media (max-width: 768px){
     .cs-left {
@@ -429,4 +436,47 @@ img.logo {
     .collapsible-links li {
         display: inline-block;
     }
+
+    p {
+        font-family: "Roboto", sans-serif;
+    }
+    h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+    
+    }
+    .top-page {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        height: 100vh; 
+        background: var(--main-bg-color);
+    }
+    .top {
+        margin-bottom: 100px;
+        margin-top: 200px;
+        background-color: var(--main-bg-color);
+        padding-bottom: 150px;;
+    }
+    .about-top {
+        text-align: center;
+        padding-top: 100px;
+    }
+    .about-pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .intro {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .highlight {
+        color: var(--pastel-pink);
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+    }
+    
 } 
